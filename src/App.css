@@ -38,7 +38,7 @@
 }
 
 .animate-text {
-  animation: fadeInUp 4s ease-in-out;
+  animation: fadeInUp 3s ease-in-out;
   animation-fill-mode: forwards;
   opacity: 0;
   
@@ -57,3 +57,13 @@
   }
 }
 
+.menu-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
