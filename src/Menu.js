@@ -23,7 +23,7 @@ const Menu = () => {
 //   };
 
   return (
-    <div className="container">
+    <div className="container menu-parent-div">
     <div className="animate-text"> 
       <p><h1>Welcome to Tasty Dishes</h1>Welcome to CJ's delicious universe. Discover the Delectable Delights on Our Exquisite Restaurant Menu! <br></br>Everything from our Big on Breakfast, Perfected Drinks, Decadent to your Generous Big Meals Right here at your fingertips.<br></br>ORDER NOW!</p>
     </div>
