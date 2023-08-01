@@ -29,30 +29,53 @@ const Menu = () => {
           <div className="row mt-5">
             {/* Row 1 Card 1 */}
             <div className="col">
-                <div class="card" style={{width: "18rem"}}>
-                  <img src="..." class="card-img-top" alt="..."></img>
+                <div class="card menu-card" style={{width: "30rem"}}>
+                  <img src="https://cafejavasmedia.s3.af-south-1.amazonaws.com/categoryImages/1682056978.jpg" class="card-img-top" alt="..."></img>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Big on Breakfast</h5>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                </div>
             </div>
+            
+
             {/* Row 1 Card 2 */}
-            <div class="col">
-            Column
-            </div>
-          </div>
+            <div className="col">
+            <div class="card menu-card" style={{width: "30rem"}}>
+                  <img src="https://images.pexels.com/photos/88917/pexels-photo-88917.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="..."></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Appetizers</h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+               </div>
+               </div>
+              </div>
+            
+          
           
           {/* Menu Row 2 */}
           <div className="row mt-5">
             {/* Row 2 Card 1 */}
             <div className="col">
-              column
-            </div>
+            <div class="card menu-card" style={{width: "30rem"}}>
+                  <img src="https://restaurentapp.s3.eu-west-1.amazonaws.com/categoryImages/1579274066.jpg" class="card-img-top" alt="..."></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Desserts</h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+             </div>
+               </div>
+            
+
             {/* Row 2 Card 2 */}
             <div class="col">
-            Column
+              <div class="card menu-card" style={{width: "30rem"}}>
+                  <img src="https://images.pexels.com/photos/12842926/pexels-photo-12842926.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="..."></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Main Courses</h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+             </div>
             </div>
           </div>
           
@@ -60,13 +83,19 @@ const Menu = () => {
           <div className="row mt-5">
             {/* Row 3 Card 1 */}
             <div className="col">
-              column
+            <div class="card menu-card" style={{width: "30rem"}}>
+                  <img src="https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="..."></img>
+                  <div class="card-body">
+                    <h5 class="card-title">Drinks</h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+               </div>
             </div>
             
           </div>
       </div>
     </div>
+    
   );
-
   }
 export default Menu;
