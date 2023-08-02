@@ -5,7 +5,7 @@ function Footer() {
     <footer className="bg-light py-5">
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-4">
             <h2>Quick links</h2>
             <ul className="list-unstyled">
               <li>
@@ -22,7 +22,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4">
             <h2>Contacts</h2>
             <ul className="list-unstyled">
               <li>
@@ -36,7 +36,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4">
             <h2>Socials</h2>
             <ul className="list-inline socials">
               <li className="list-inline-item">
