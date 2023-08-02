@@ -32,7 +32,7 @@ function Footer() {
                 <a href="tel:254722310349" className="text-decoration-none">(254)-722-310-349</a>
               </li>
               <li>
-                <a href="mailto:tastydishes.co.ke" className="text-decoration-none">allthings@attech.co.ke</a>
+                <a href="mailto:tastydishes.co.ke" className="text-decoration-none">tastydishes@gmail.co.ke</a>
               </li>
             </ul>
           </div>
