@@ -5,8 +5,7 @@ const Careers = () => {
     <div className="container">
       <div className="row">
         <div
-          className="col-md-11"
-          style={{ marginTop: "20px", marginBottom: "20px", width: "100%" }}
+          className="col-md-12 mb-4 mt-4 "
         >
           <img
             src="https://images.pexels.com/photos/2977514/pexels-photo-2977514.jpeg?auto=compress&cs=tinysrgb&w=1600"
