@@ -1,15 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-//import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import About from "./About"
 
 function Navbar(){
-//   <Routes>
-//   <Route path="/about" element={<About />} />
-//   <Route index path="/projects" element={<ProjectList />} />
-//   <Route path="projects/:id" element={<ProjectDetail />} />
-//   <Route exact path="/" element={<Home />} />
-//   <Route path="*" element={<h1>404 not found</h1>} />
-// </Routes>
+  <Routes>
+  <Route path="/about" element={<About />} />
+  
+ </Routes>
 
   return(
     <div class="shadow p-1 mb-3 bg-body-tertiary rounded border-bottom border-black" style={{backgroundColor:"black"}}>
@@ -31,12 +29,13 @@ function Navbar(){
           <NavLink class="nav-link" id="nav-item" to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works" style={{textDecoration : "none"}}>Featured Products</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" id="nav-item" to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works" style={{textDecoration : "none"}}>About</NavLink>
+          <NavLink class="nav-link" id="nav-item" to="./about" style={{textDecoration : "none"}}>About</NavLink>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
 </div>
   )
 }
