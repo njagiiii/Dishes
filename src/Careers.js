@@ -8,7 +8,7 @@ const Careers = () => {
     const currentHour = currentTime.getHours();
 
     // Check if the current hour is past 4 pm (16:00)
-    const isPast4PM = currentHour >= 16;
+    const isPast4PM = currentHour >= 16 || currentHour < 9;
 
     // Show different messages based on the time
     const toastElement = document.querySelector(".toast-bodi"); // Use querySelector to get the specific element
@@ -28,7 +28,7 @@ const Careers = () => {
     setTimeout(() => {
       liveToast.classList.remove("show");
     }, 4000);
-  };
+  }
 
   return (
     <div className="container">
@@ -73,15 +73,15 @@ const Careers = () => {
         4:00pm to speak with a manager or just fill in the form below with your
         data and position you’re applying for.
       </p>
-      //The application form
+      {/* he application form */}
       <form className="row g-3" onSubmit={handleSubmit}>
         <div class="col-md-6">
           <label htmlFor="Full Name">Full Name: </label>
-          <input class="form-control" type="text"></input>
+          <input class="form-control" type="text" name="fullname" required></input>
         </div>
         <div className="col-md-6">
           <label htmlFor="Email">Email: </label>
-          <input class="form-control" type="email"></input>
+          <input class="form-control" type="email" name="email" required></input>
         </div>
         <div className="col-12">
           <label htmlFor="Position">Position: </label>
@@ -107,7 +107,8 @@ const Careers = () => {
           </button>
         </div>
       </form>
-      //this is the toast message body
+
+      {/* this is the toast message body */}
       <div class="toast-container position-fixed top-0 end-0 p-3">
         <div id="liveToast" class="toast">
           <div class="toast-header">
