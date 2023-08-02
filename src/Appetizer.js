@@ -15,7 +15,7 @@ function Appetizer() {
       <div className="row">
         {menuData.appetizers.map((item) => (
           <div key={item.id} className="col-md-4 mb-4">
-            <div className="card h-100">
+            <div className="card food-card h-100">
               <img
                 src={item.image}
                 alt={item.name}
@@ -26,6 +26,7 @@ function Appetizer() {
                 <h5 className="card-title">{item.name}</h5>
                 <p className="card-text">{item.description}</p>
                 <p className="card-text">Price: Ksh {item.price}</p>
+                <button className="btn btn-primary btn-sm rounded-md shadow-lg" >Order Now</button>
               </div>
             </div>
           </div>
