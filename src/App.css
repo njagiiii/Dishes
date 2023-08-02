@@ -72,11 +72,13 @@
   margin: auto;
   padding: 5px;
   
-
-  
 }
 
 .menu-header{
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.header-bold {
+  font-weight: bold;
 }
