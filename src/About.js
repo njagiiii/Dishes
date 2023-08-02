@@ -4,7 +4,7 @@ import React from "react";
 function About(){
     return(
         <div>
-            <img src="https://media.istockphoto.com/id/1415519917/photo/hotel-chef.webp?b=1&s=170667a&w=0&k=20&c=DG-xSMpk-DqOiJCSbPGG7F_H224LF0xB5OptiYO-ZuA="/>
+            <img src="https://images.pexels.com/photos/2689419/pexels-photo-2689419.jpeg?auto=compress&cs=tinysrgb&w=600"alt=""/>
             <h1>
                 Welcome Everyone
             </h1>
@@ -29,7 +29,49 @@ function About(){
             <p>
             Tasty Dishes is more than just a recipe app; it's an immersive cultural experience that celebrates the diversity of global cuisines. Join our vibrant community of food enthusiasts, share your own recipes, and connect with like-minded individuals who share a passion for cooking and cultural exploration.
             </p>
+            <form>
+                <p>
+                   <b>FEEDBACK FORM</b> 
+                </p>
+       <div class="mb-3">
+       <label for="exampleInputEmail1" class="form-label">Email address</label>
+       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+       <div id="emailHelp" class="form-text">(We'll never share your email with anyone else).</div>
+     </div>
+       <div class="mb-3">
+      <label for="exampleInputName" class="form-label">Name</label>
+      <input type="name" class="form-control" id="exampleInputName"/>
+      <div id="nameHelp" class="form-text">(Optional)</div>
+     </div>
+     <div class="mb-3">
+      <label for="exampleInputLocation" class="form-label">Location Visited</label>
+      <input type="name" class="form-control" id="exampleInputLocation"/>
+      <div id="LoctionHelp" class="form-text"></div>
+     </div>
+
+     <p>Did you:</p>
+     <div class="mb-3 form-check">
+       <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+       <label class="form-check-label" for="exampleCheck1">Dine in</label>
+     </div>
+     <div class="mb-3 form-check">
+       <input type="checkbox" class="form-check-input" id="exampleCheck2"/>
+       <label class="form-check-label" for="exampleCheck2">Dine out</label>
+     </div>
+
+
+  <button
+  
+   type="submit" class="btn btn-primary ">Submit</button>
+   
+
+</form>
+
+<div class="modal-dialog modal-fullscreen-sm-down">
+  ...
+</div>
         </div>
+        
     )
 }
 export default About;
