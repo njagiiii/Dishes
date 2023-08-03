@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Breakfast from './Breakfast';
 import Menu from './Menu';
 import MenuContext from './MenuContext';
@@ -9,15 +9,14 @@ import Dessert from './Dessert';
 import Appetizer from './Appetizer';
 import MainCourse from './Main';
 import Drinks from './Drinks';
-import Navbar from './Navbar';
+import FeaturedProduct from './FeaturedProduct';
+import ViewDetails from './ViewDetails';
+import OrderSummary from './OrderSummary';
 
 
 function App() {
   return (
     <div>
-      
-    <Router>
-    <Navbar/>
       <MenuContext>
         <Routes>
           <Route path="/" element={<Menu />} />
@@ -26,9 +25,12 @@ function App() {
           <Route path="Appetizer" element={<Appetizer />} />
           <Route path="main" element={<MainCourse />} />
           <Route path="Drinks" element={<Drinks />} />
+          <Route path="/view-details" element={<ViewDetails />} />
+          <Route path="/order-summary" element={<OrderSummary />} />
         </Routes>
+        <FeaturedProduct />
       </MenuContext>
-    </Router>
+   
    
     </div>
   );
