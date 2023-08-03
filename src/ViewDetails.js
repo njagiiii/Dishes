@@ -32,14 +32,14 @@ const ViewDetails = () => {
 
       //REnder the details of the selevted food
   return (
-    <div>
-    <div class="card mb-3" style={{maxWidth:"900px"}}>
+    <div style={{marginLeft:"50px", marginTop:"80px"}}>
+    <div class="card mb-3" style={{maxWidth:"900px",  border:"none"}}>
   <div class="row g-0">
     <div class="col-md-4">
-      <img src={foodItem.image}  class="img-fluid rounded-start" alt={foodItem.name}/>
+      <img src={foodItem.image}  class="img-fluid rounded-start" alt={foodItem.name} style={{borderRadius:"none",marginLeft:"-30px" }}/>
     </div>
     <div class="col-md-8">
-      <div class="card-body" style={{marginLeft:"50px"}}>
+      <div class="card-body" style={{ marginTop:"50px"}}>
         <h5 class="card-title">{foodItem.name}</h5>
         <p class="card-text">{foodItem.description}</p>
         <p class="card-text">KSH {foodItem.price}</p>

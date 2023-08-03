@@ -24,7 +24,7 @@ function Navbar(){
           <NavLink class="nav-link" id="nav-item" to="/menu" style={{textDecoration : "none"}}>Menu</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" id="nav-item" to="/features" style={{textDecoration : "none"}}>Products</NavLink>
+          <NavLink class="nav-link" id="nav-item" to="/features" style={{textDecoration : "none"}}>Product</NavLink>
         </li>
         <li class="nav-item">
           <NavLink class="nav-link" id="nav-item" to="/about" style={{textDecoration : "none"}}>About</NavLink>

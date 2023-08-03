@@ -19,17 +19,17 @@ const OrderSummary = () => {
 
        //function to go back to the menu on navigation
           const handleAddorder = ()=> {
-            navigation('/')
+            navigation('/menu')
           }
 
   return (
-    <div class="card mb-3" style={{maxWidth:"800px", marginTop:"100px", marginLeft:"800px", border:"none"}}>
+    <div class="card mb-3" style={{maxWidth:"800px", marginTop:"100px", marginLeft:"50px", border:"none"}}>
   <div class="row g-0">
     <div class="col-md-4">
-      <img src={foodItem.image} class="img-fluid rounded-start" alt={foodItem.name}/>
+      <img src={foodItem.image} class="img-fluid rounded-start" alt={foodItem.name} style={{maxWidth:"300px", marginLeft:"70px"}}/>
     </div>
     <div class="col-md-8">
-      <div class="card-body" style={{marginLeft:"100px", marginTop:"50px"}}>
+      <div class="card-body" style={{marginLeft:"120px", marginTop:"50px"}}>
         <h5 class="card-title">Order Summary</h5>
         <p class="card-text"> Total Price:{totalPrice}</p>
          <button style={{width:"200px", height:"50px", borderRadius:"10px"}} onClick={handleCheckout}>CheckOut</button>

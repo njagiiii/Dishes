@@ -3,8 +3,7 @@ import About from"./About"
 import "./index.css";
 import Navbar from "./Navbar";
 import "./App.css";
-import Home from "./Home";
-import Featured from "./Featured";   
+import Home from "./Home";  
 import React from 'react';
 import Footer from "./Footer";
 import Careers from "./Careers"
@@ -29,7 +28,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route  path="/menu" element={<Menu />} />
-          <Route path="/features" element={<Featured />} />
           <Route path="/breakfast" element={<Breakfast />} />
           <Route path="/dessert" element={<Dessert />} />
           <Route path="/appetizer" element={<Appetizer />} />
@@ -39,9 +37,9 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/view-details" element={<ViewDetails />} />
           <Route path="/order-summary" element={<OrderSummary />} />
+          <Route path ="/features" element={<FeaturedProduct />} />
           <Route path="*" element={<h1>404 not found</h1>} />
           </Routes>
-          <FeaturedProduct />
           </MenuContext>
           <Footer />
     </div>
