@@ -6,7 +6,7 @@ const Home = () => {
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2018/01/Charcuterie_Darina-Kopcok.jpg?fit=750%2C558&ssl=1" className="d-block w-100" alt="food plate" />
+            <img src="https://c4.wallpaperflare.com/wallpaper/129/613/191/chocolate-bonbons-wallpaper-preview.jpg" className="d-block w-100" alt="food plate" />
           </div>
           <div className="carousel-item">
             <img src="https://3.bp.blogspot.com/-DYDzOymPQSA/XIW4TsE7ZQI/AAAAAAAAHzw/mulRYiNTrvov-gN7Eu-45K4UDBltRvmsQCHMYCw/s1600/italian-food-images-pizza-pie-hd-wallpaper-and-background-photos.jpg" className="d-block w-100" alt="food" />
