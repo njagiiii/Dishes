@@ -9,6 +9,7 @@ const Home = () => {
     navigate('/menu')
    }
   return (
+    <div>
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           
@@ -45,71 +46,10 @@ const Home = () => {
               alt="tasty"
             />
           </div>
-      <div className="d-flex justify-content-around my-5">
-        <div style={{ position: 'relative', textAlign: 'center', width: '30%' }}>
-          <img
-            src="https://img.freepik.com/free-photo/fried-chicken-wings-with-french-fries-tomato_74190-6309.jpg?w=2000"
-            alt="food 3"
-            style={{ width: '100%' }}
-          />
-          <div
-            style={{
-              position: 'absolute',
-              bottom: '10%',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              color: 'white',
-              background: 'rgba(0, 0, 0, 0.6)',
-              padding: '5px 10px',
-              borderRadius: '5px',
-              fontSize: '1.5rem',
-              fontWeight: 'bold',
-            }}
-          >
-            flamed chicken
-          </div>
-        </div>
-        <div style={{ position: 'relative', textAlign: 'center', width: '30%' }}>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycFfiZusrBMbke5r2KmX6G_L2WgGjOcgRhA&usqp=CAU"
-            alt="food 4"
-            style={{ width: '100%' }}
-          />
-          <div
-            style={{
-              position: 'absolute',
-              bottom: '10%',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              color: 'white',
-              background: 'rgba(0, 0, 0, 0.6)',
-              padding: '5px 10px',
-              borderRadius: '5px',
-              fontSize: '1.5rem',
-              fontWeight: 'bold',
-            }}
-          >
-            Juicy Yummy !
-          </div>
-        </div>
       </div>
 
-<div style={{ textAlign: 'center', backgroundColor: 'black', color: 'white', padding: '20px' }}>
-        <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
-          We're committed to great food, great coffee, great service, an experience that will make your time with us fabulous. All visuals are serving suggestions only.
-          Prices are quoted in Kenyan Shillings and inclusive of VAT.
-        </p>
-      </div>
 
-      
-      <div style={{ textAlign: 'right', padding: '10px' }}>
-        <img
-          src="https://img.freepik.com/premium-vector/tasty-food-chef-logo-mascot-template_190190-133.jpg" // Replace with your actual logo URL
-          alt="food restaurant logo"
-          style={{ width: '120px' }}
-        />
-      </div>
-      
+  
       <div
         style={{
           position: 'absolute',
@@ -152,25 +92,6 @@ const Home = () => {
           Explore our delicious menu and place your order today!
         </p>
 
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <button
-            className="btn btn-primary"
-            onClick={() => alert('You clicked the Place Order button!')}
-            style={{
-              fontSize: '1.2rem',
-              fontWeight: 'bold',
-              backgroundColor: 'black',
-              color: 'white',
-              padding: '12px 24px',
-              borderRadius: '8px',
-              cursor: 'pointer',
-            }}>
-            </button>
-
-            <p>Explore our delicious menu and place your order today!</p>
-         
-          </div>
-
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <button
               className="btn btn-primary"
@@ -188,10 +109,10 @@ const Home = () => {
               Place Order
             </button>
           </div>
-            <button>Place order</button>
+           
         </div>
       </div>
-      </div>
+    </div>
       )
       }
   
