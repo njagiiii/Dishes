@@ -53,7 +53,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 ">
             <h2>Socials</h2>
             <ul className="list-inline socials">
               <li className="list-inline-item">
