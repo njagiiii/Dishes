@@ -19,20 +19,13 @@ function Navbar(){
           <NavLink class="nav-link" id="nav-item" to="/menu" style={{textDecoration : "none"}}>Menu</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" id="nav-item" to="features" style={{textDecoration : "none"}}>Featured Products</NavLink>
+          <NavLink class="nav-link" id="nav-item" to="/features" style={{textDecoration : "none"}}>Featured Products</NavLink>
         </li>
         <li class="nav-item">
           <NavLink class="nav-link" id="nav-item" to="/about" style={{textDecoration : "none"}}>About</NavLink>
-          <NavLink class="nav-link active"  aria-current="page" to="/contact" style={{textDecoration : "none"}}>Home</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" id="nav-item" to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works" style={{textDecoration : "none"}}>Menu</NavLink>
-        </li>
-        <li class="nav-item">
-          <NavLink class="nav-link" id="nav-item" to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works" style={{textDecoration : "none"}}>Featured Products</NavLink>
-        </li>
-        <li class="nav-item">
-          <NavLink class="nav-link" id="nav-item" to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works" style={{textDecoration : "none"}}>About</NavLink>
+          <NavLink class="nav-link" id="nav-item" to="/career" style={{textDecoration : "none"}}>Career</NavLink>
         </li>
       </ul>
     </div>
