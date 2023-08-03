@@ -9,9 +9,11 @@ import Appetizer from './Appetizer';
 import MainCourse from './Main';
 import Drinks from './Drinks';
 
+
 function App() {
   return (
     <div>
+      
     <Router>
       <MenuContext>
         <Routes>
@@ -24,6 +26,7 @@ function App() {
         </Routes>
       </MenuContext>
     </Router>
+   
     </div>
   );
 }
