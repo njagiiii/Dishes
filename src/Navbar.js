@@ -1,14 +1,6 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 function Navbar(){
-   //check the pathway to hide the navbar
-    // const location =useLocation()
-
-    //if the location is home hide the navbar
-      // if(location.pathname === "/"){
-      //   return null;
-      // }
 
   return(
     <div class="shadow p-1 mb-3 bg-body-tertiary rounded border-bottom border-black" style={{backgroundColor:"black"}}>
@@ -31,6 +23,16 @@ function Navbar(){
         </li>
         <li class="nav-item">
           <NavLink class="nav-link" id="nav-item" to="/about" style={{textDecoration : "none"}}>About</NavLink>
+          <NavLink class="nav-link active"  aria-current="page" to="/contact" style={{textDecoration : "none"}}>Home</NavLink>
+        </li>
+        <li class="nav-item">
+          <NavLink class="nav-link" id="nav-item" to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works" style={{textDecoration : "none"}}>Menu</NavLink>
+        </li>
+        <li class="nav-item">
+          <NavLink class="nav-link" id="nav-item" to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works" style={{textDecoration : "none"}}>Featured Products</NavLink>
+        </li>
+        <li class="nav-item">
+          <NavLink class="nav-link" id="nav-item" to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works" style={{textDecoration : "none"}}>About</NavLink>
         </li>
       </ul>
     </div>
