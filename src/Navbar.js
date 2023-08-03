@@ -1,6 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 function Navbar(){
+   const location = useLocation()
+
+   if(location.pathname === '/'){
+    return null;
+   }
 
   return(
     <div class="shadow p-1 mb-3 bg-body-tertiary rounded border-bottom border-black" style={{backgroundColor:"black"}}>
@@ -19,7 +24,7 @@ function Navbar(){
           <NavLink class="nav-link" id="nav-item" to="/menu" style={{textDecoration : "none"}}>Menu</NavLink>
         </li>
         <li class="nav-item">
-          <NavLink class="nav-link" id="nav-item" to="/features" style={{textDecoration : "none"}}>Featured Products</NavLink>
+          <NavLink class="nav-link" id="nav-item" to="/features" style={{textDecoration : "none"}}>Products</NavLink>
         </li>
         <li class="nav-item">
           <NavLink class="nav-link" id="nav-item" to="/about" style={{textDecoration : "none"}}>About</NavLink>

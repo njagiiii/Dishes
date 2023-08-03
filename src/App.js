@@ -33,10 +33,10 @@ function App() {
           <Route path="/main" element={<MainCourse />} />
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/career" element={<Careers/>} />
+          <Route path="/about" element={<About/>} />
           <Route path="*" element={<h1>404 not found</h1>} />
         </Routes>
       </MenuContext>
-      <About/>
       <Footer />
     </div>
   );

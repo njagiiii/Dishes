@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate()
+
+  //create a function when clicked it navigates to menu
+   const handlenavigation = () => {
+    navigate('/menu')
+   }
   return (
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
@@ -61,7 +68,7 @@ const Home = () => {
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <button
               className="btn btn-primary"
-              onClick={() => alert('You clicked the Place Order button!')}
+              onClick={handlenavigation}
               style={{
                 fontSize: '1.2rem',
                 fontWeight: 'bold',
