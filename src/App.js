@@ -17,6 +17,9 @@ import Dessert from './Dessert';
 import Appetizer from './Appetizer';
 import MainCourse from './Main';
 import Drinks from './Drinks';
+import FeaturedProduct from './FeaturedProduct';
+import ViewDetails from './ViewDetails';
+import OrderSummary from './OrderSummary';
 
 function App() {
   return (
@@ -34,12 +37,14 @@ function App() {
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/career" element={<Careers/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/view-details" element={<ViewDetails />} />
+          <Route path="/order-summary" element={<OrderSummary />} />
           <Route path="*" element={<h1>404 not found</h1>} />
-        </Routes>
-      </MenuContext>
-      <Footer />
+          </Routes>
+          <FeaturedProduct />
+          </MenuContext>
+          <Footer />
     </div>
   );
 }
-
 export default App;
