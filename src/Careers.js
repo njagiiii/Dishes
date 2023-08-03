@@ -28,7 +28,7 @@ const Careers = () => {
     setTimeout(() => {
       liveToast.classList.remove("show");
     }, 4000);
-  }
+  };
 
   return (
     <div className="container">
@@ -77,11 +77,21 @@ const Careers = () => {
       <form className="row g-3" onSubmit={handleSubmit}>
         <div class="col-md-6">
           <label htmlFor="Full Name">Full Name: </label>
-          <input class="form-control" type="text" name="fullname" required></input>
+          <input
+            class="form-control"
+            type="text"
+            name="fullname"
+            required
+          ></input>
         </div>
         <div className="col-md-6">
           <label htmlFor="Email">Email: </label>
-          <input class="form-control" type="email" name="email" required></input>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            required
+          ></input>
         </div>
         <div className="col-12">
           <label htmlFor="Position">Position: </label>
