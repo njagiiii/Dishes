@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -8,6 +9,7 @@ import Dessert from './Dessert';
 import Appetizer from './Appetizer';
 import MainCourse from './Main';
 import Drinks from './Drinks';
+import Navbar from './Navbar';
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
     <div>
       
     <Router>
+    <Navbar/>
       <MenuContext>
         <Routes>
           <Route path="/" element={<Menu />} />
@@ -31,4 +34,8 @@ function App() {
   );
 }
 
+
+  
+    
+ 
 export default App;
