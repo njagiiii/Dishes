@@ -1,5 +1,5 @@
 
-
+import About from"./About" 
 import "./index.css";
 import Navbar from "./Navbar";
 import "./App.css";
@@ -36,6 +36,7 @@ function App() {
           <Route path="*" element={<h1>404 not found</h1>} />
         </Routes>
       </MenuContext>
+      <About/>
       <Footer />
     </div>
   );
