@@ -32,6 +32,7 @@ const Careers = () => {
 
   return (
     <div className="container">
+       <h1 style={{textAlign:"center"}}> Careers </h1>
       <div className="row">
         <div className="col-md-12 mb-4 mt-4 ">
           <img
@@ -49,13 +50,6 @@ const Careers = () => {
               textAlign: "center",
             }}
           >
-            <div className="text">
-              <h1>
-                <em>
-                  <b>CAREERS</b>
-                </em>
-              </h1>
-            </div>
           </div>
         </div>
       </div>

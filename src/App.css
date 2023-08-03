@@ -39,3 +39,71 @@
     transform: rotate(360deg);
   }
 }
+.animate-text {
+  animation: fadeInUp 3s ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  
+  
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    
+  }
+}
+
+.menu-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-parent-div {
+  margin: auto;
+  padding: 5px;
+  
+}
+
+.menu-header{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.header-bold {
+  font-weight: bold;
+}
+
+.food-card {
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  transition: transform 0.3s ease; /* Transition for smooth animation */
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Scale the element to 110% on hover */
+}
+
+.btn:active {
+  transform: scale(0.75); /* Scale the element to 75% when it's clicked/active */
+}
+
