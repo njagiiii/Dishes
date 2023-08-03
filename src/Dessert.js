@@ -5,6 +5,7 @@ function Dessert() {
   const menuData = MenuData();
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [showToast, setShowToast] = useState(false);
 
   // Check if data is available
   if (!menuData || !menuData.desserts || menuData.desserts.length === 0) {
@@ -15,6 +16,20 @@ function Dessert() {
     setSelectedItem(item);
     setShowModal(true);
   };
+
+  const handleConfirmOrder = () => {
+    setShowModal(false);
+    setShowToast(true);
+  };
+
+      // variable to store the timer ID
+      let toastTimer;
+
+      // Clear the previous timer if any and set a new timer for hiding the toast after 5 seconds
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        setShowToast(false);
+      }, 5000);
 
   return (
     <div className='container'>
@@ -59,13 +74,33 @@ function Dessert() {
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={() => setShowModal(false)}>Confirm Order</button>
+                <button type="button" className="btn btn-primary" onClick={handleConfirmOrder}>Confirm Order</button>
               </div>
             </div>
           </div>
         </div>
       )}
       {showModal && <div className="modal-backdrop fade show"></div>}
+
+      {/* Toast */}
+      {selectedItem && showToast && (
+        <div
+          className="toast show"
+          style={{
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+            minWidth: '200px',
+          }}
+        >
+          <div className="toast-header">
+            <strong className='me-auto'>Order Confirmed</strong>
+          </div>
+          <div className="toast-body">
+            Thank you for ordering the {selectedItem.name}. Your order is on the way.
+          </div>
+        </div>
+      )}
     </div>
   );
 }
