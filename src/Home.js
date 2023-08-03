@@ -1,6 +1,10 @@
 import React from 'react'
 
 const Home= () => {
+
+  // const handleClickToMenu = () => {
+  //   history.push('/menu');
+  // };
   return (
 
     <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
@@ -18,6 +22,9 @@ const Home= () => {
       <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/04/food-photography-blogs-spread.jpg" className="d-block w-100" alt="tasty"/>
       </div>
     </div>
+    {/* <button type="button" className="btn btn-danger" onClick={handleClickToMenu}>
+        Start Here
+      </button> */}
   </div>
   
   )
