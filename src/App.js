@@ -15,11 +15,11 @@ function App() {
       <MenuContext>
         <Routes>
           <Route path="/" element={<Menu />} />
-          <Route path="Breakfast" element={<Breakfast />} />
-          <Route path="Dessert" element={<Dessert />} />
-          <Route path="Appetizer" element={<Appetizer />} />
+          <Route path="breakfast" element={<Breakfast />} />
+          <Route path="dessert" element={<Dessert />} />
+          <Route path="appetizer" element={<Appetizer />} />
           <Route path="main" element={<MainCourse />} />
-          <Route path="Drinks" element={<Drinks />} />
+          <Route path="drinks" element={<Drinks />} />
         </Routes>
       </MenuContext>
     </Router>

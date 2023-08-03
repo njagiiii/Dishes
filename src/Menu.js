@@ -6,8 +6,9 @@ const Menu = () => {
   return (
     <div className="container menu-parent-div text-center">
     <div className="animate-text menu-header"> 
+    <h1 className='font-weight-bold'>Welcome to Tasty Dishes</h1>
       <p className="font-weight-bold header-bold">
-        <h1>Welcome to Tasty Dishes</h1>Welcome to Tasty Dishes delicious universe. Discover the Delectable Delights on Our Exquisite Restaurant Menu! <br>
+        Welcome to Tasty Dishes delicious universe. Discover the Delectable Delights on Our Exquisite Restaurant Menu! <br>
         </br>Everything from our Big on Breakfast, Perfected Drinks, Decadent to your Generous Big Meals Right here at your fingertips.<br>
         </br>ORDER NOW!</p>
     </div>
@@ -42,8 +43,8 @@ const Menu = () => {
             <Link to="Appetizer">
                   <img src="https://images.pexels.com/photos/88917/pexels-photo-88917.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="..."></img>
                   </Link>
-                  <div class="card-body">
-                    <h5 class="card-title">Appetizers</h5>
+                  <div className="card-body">
+                    <h5 className="card-title">Appetizers</h5>
                     
                   </div>
                </div>
@@ -56,12 +57,12 @@ const Menu = () => {
           <div className="row mt-5">
             {/* Row 2 Card 1 */}
             <div className="col-lg-6 mb-4">
-            <div class="card menu-card bg-light" style={{width: "30rem"}}>
+            <div className="card menu-card bg-light" style={{width: "30rem"}}>
               <Link to="Dessert">
                   <img src="https://restaurentapp.s3.eu-west-1.amazonaws.com/categoryImages/1579274066.jpg" class="card-img-top" alt="..."></img>
                    </Link>
-                  <div class="card-body">
-                    <h5 class="card-title">Desserts</h5>
+                  <div className="card-body">
+                    <h5 className="card-title">Desserts</h5>
                   </div>
              </div>
                </div>
@@ -88,12 +89,12 @@ const Menu = () => {
             {/* Row 3 Card 1 */}
             <div className="col-lg-6 offset-lg-3">
             <a href="about:blank">
-            <div class="card menu-card bg-light" style={{width: "30rem"}}>
+            <div className="card menu-card bg-light" style={{width: "30rem"}}>
                <Link to="Drinks">  
                   <img src="https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="..."></img>
                   </Link>
-                  <div class="card-body">
-                    <h5 class="card-title">Drinks</h5>
+                  <div className="card-body">
+                    <h5 className="card-title">Drinks</h5>
                     
                   </div>
                </div>
