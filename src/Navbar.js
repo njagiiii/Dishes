@@ -16,7 +16,7 @@ function Navbar() {
           <NavLink
             class="navbar-brand"
             to="https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works"
-            style={{ textDecoration: "none" , fontSize:"32px",color:"#a6b49a"}}
+            style={{ textDecoration: "none" , fontSize:"30px",color:"#a6b49a"}}
           >
             Tasty Dishes
           </NavLink>
@@ -38,7 +38,7 @@ function Navbar() {
                   class="nav-link active"
                   aria-current="page"
                   to="/"
-                  style={{ textDecoration: "none",color:"#a6b49a", fontSize:"25px"}}
+                  style={{ textDecoration: "none",color:"#a6b49a", fontSize:"20px"}}
                 >
                   HOME
                 </NavLink>
@@ -48,7 +48,7 @@ function Navbar() {
                   class="nav-link"
                   id="nav-item"
                   to="/menu"
-                  style={{ textDecoration: "none" ,color:"#a6b49a",fontSize:"25px"}}
+                  style={{ textDecoration: "none" ,color:"#a6b49a",fontSize:"20px"}}
                 >
                   MENU
                 </NavLink>
@@ -58,7 +58,7 @@ function Navbar() {
                   class="nav-link"
                   id="nav-item"
                   to="/features"
-                  style={{ textDecoration: "none" ,color:"#a6b49a",fontSize:"25px"}}
+                  style={{ textDecoration: "none" ,color:"#a6b49a",fontSize:"20px"}}
                 >
                   PRODUCT
                 </NavLink>
@@ -68,7 +68,7 @@ function Navbar() {
                   class="nav-link"
                   id="nav-item"
                   to="/about"
-                  style={{ textDecoration: "none" ,color:"#a6b49a",fontSize:"25px"}}
+                  style={{ textDecoration: "none" ,color:"#a6b49a",fontSize:"20px"}}
                 >
                   ABOUT
                 </NavLink>
@@ -78,7 +78,7 @@ function Navbar() {
                   class="nav-link"
                   id="nav-item"
                   to="/career"
-                  style={{ textDecoration: "none" ,color:"#a6b49a",fontSize:"25px" }}
+                  style={{ textDecoration: "none" ,color:"#a6b49a",fontSize:"20px" }}
                 >
                   CAREER
                 </NavLink>

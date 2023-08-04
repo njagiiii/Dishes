@@ -65,9 +65,9 @@ function Breakfast() {
                   onClick={() => handleOrderClick(item)}
                   style={{
                     backgroundColor: "#547043",
-                    padding: "15px 30px",
+                    padding: "10px 20px",
                     color: "white",
-                    fontSize: "20px",
+                    fontSize: "15px",
                   }}
                 >
                   Order Now

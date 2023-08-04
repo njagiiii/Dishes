@@ -67,8 +67,8 @@ function Dessert() {
                   style={{
                     backgroundColor: "#547043",
                     color: "white",
-                    fontSize: "23px",
-                    padding: "10px 25px",
+                    fontSize: "15px",
+                    padding: "10px 20px",
                     borderRadius: "10px",
                   }}
                 >

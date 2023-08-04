@@ -6,7 +6,7 @@ function Footer() {
     <div className="footer-dark">
       <footer>
         <div className="container">
-          <div className="row">
+          <div className="row">  
             <div className="col-sm-6 col-md-3 item">
               <h3>Quick Links</h3>
               <ul>

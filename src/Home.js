@@ -70,11 +70,12 @@ const Home = () => {
         <h2
 
           style={{
-            fontSize: '5.5rem',
+            fontSize: '4.5rem',
             fontWeight: 'bold',
             color: 'white',
-            marginBottom: '10px',
+            marginTop:"-300px",
             textShadow: '2px 2px 2px rgba(0, 0, 0, 0.2)',
+            position:"static !important"
           }}
         >
           Welcome to Tasty Dishees!
@@ -97,7 +98,7 @@ const Home = () => {
               className="btn "
               onClick={handlenavigation}
               style={{
-                fontSize: '2.2rem',
+                fontSize: '1.6rem',
                 fontWeight: 'bold',
                 backgroundColor: '#547043', 
                 color: 'white', 

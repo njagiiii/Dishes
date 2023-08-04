@@ -32,20 +32,22 @@ const ViewDetails = () => {
 
       //REnder the details of the selevted food
   return (
-    <div style={{marginLeft:"50px", marginTop:"80px"}}>
-    <div class="card mb-3" style={{maxWidth:"900px",  border:"none"}}>
+    <div style={{marginLeft:"50px", marginTop:"80px", textAlign:"center"}}>
+      <h1>View Details</h1>
+      <p style={{fontSize:"25px",textAligncenter:"center"}}>At Delightful Bistro, we are committed to providing an exceptional dining experience that will leave you with a sense of delight and satisfaction. <br></br> Come and join us for a culinary journey that will tantalize your taste buds and leave you wanting more.</p>
+    <div class="card mb-3" style={{maxWidth:"900px",  border:"none", marginLeft:"800px", marginTop:"100px"}}>
   <div class="row g-0">
     <div class="col-md-4">
       <img src={foodItem.image}  class="img-fluid rounded-start" alt={foodItem.name} style={{borderRadius:"none",marginLeft:"10px",marginTop:"40px" }}/>
     </div>
     <div class="col-md-8">
-      <div class="card-body" style={{ marginTop:"50px",marginLeft:"50px"}}>
+      <div class="card-body" style={{ marginTop:"50px",marginLeft:"20px"}}>
         <h5 class="card-title">{foodItem.name}</h5>
         <p class="card-text">{foodItem.description}</p>
         <p class="card-text">KSH {foodItem.price}</p>
       {/* dropdown menu 1 */}
         <div>
-    <label htmlFor='dropdown' style={{marginTop:"20px"}}>CHOICE OF JUICE</label>
+    <label htmlFor='dropdown' style={{marginTop:"20px",marginLeft:"-420px"}}>CHOICE OF JUICE</label>
      <select id='dropdown1' value={selectedOption} onChange={handleChange} style={{width:"400px" , height:"50px", borderRadius:"5px",display:"block", marginTop:"15px"}}>
       <option value=''>Select an option</option>
       <option value='option1'>PASSION</option>
@@ -57,7 +59,7 @@ const ViewDetails = () => {
      </div>
       {/* dropdown menu 2 */}
      <div>
-    <label htmlFor='dropdown' style={{marginTop:"20px"}}>CHOOSE AN ACCOMPANIMENT</label>
+    <label htmlFor='dropdown' style={{marginTop:"20px",marginLeft:"-320px"}}>CHOOSE AN ACCOMPANIMENT</label>
      <select id='dropdown2' value={selectedOption1} onChange={handleChange1} style={{width:"400px" , height:"50px", borderRadius:"5px",display:"block", marginTop:"15px"}}>
       <option value=''>Select an option</option>
       <option value='option6'>HOME FRIES</option>
@@ -65,7 +67,7 @@ const ViewDetails = () => {
       <option value='option3'>SUB HOME FRIES WITH ATEAMED VEGIES</option>
      </select>
      </div>
-     <button style={{width:"300px" , marginTop:"30px", borderRadius:"10px", height:"50px",marginLeft:"40px",color:"white"}} onClick={handleSummary}>Order</button>
+     <button style={{width:"300px" , marginTop:"30px", borderRadius:"10px", height:"50px" ,marginLeft:"-130px",color:"white"}} onClick={handleSummary}>Order</button>
      {totalPrice > 0 && (
       <p>Total Price KSH {totalPrice}</p>
      )}
