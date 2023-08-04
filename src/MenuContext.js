@@ -10,7 +10,7 @@ function MenuContext({ children }) {
   const [data, setData] = useState({});
 
   function fetchData () {
-    fetch ('https://tasty-dishes-cr4o.onrender.com/menu')
+    fetch ('https://dishes-snyh.onrender.com/menu')
     .then((res) => res.json())
     .then((data) => setData(data))
   }

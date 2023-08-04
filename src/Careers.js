@@ -7,7 +7,7 @@ const Careers = () => {
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
 
-    // Check if the current hour is past 4 pm (16:00)
+    // Check if the current hour is past 4 pm (16:00) or before 9 am
     const isPast4PM = currentHour >= 16 || currentHour < 9;
 
     // Show different messages based on the time

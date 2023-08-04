@@ -107,3 +107,42 @@
   transform: scale(0.75); /* Scale the element to 75% when it's clicked/active */
 }
 
+/* Custom CSS to center the modal content */
+/* Custom CSS for the modal */
+.modal-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog-custom {
+  max-width: 500px; /* Set your desired max-width */
+  width: 90%; /* Set your desired width */
+}
+
+#circle {
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto; 
+  margin-bottom: 20px;
+}
+
+/* Center the modal vertically */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Center the modal content horizontally */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

@@ -1,13 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { MenuData } from './MenuContext';
 
 function MainCourse() {
   const menuData = MenuData();
+  const [showModal, setShowModal] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   // Check if data is available
   if (!menuData || !menuData.main_courses || menuData.main_courses.length === 0) {
     return <p>Loading...</p>;
   }
+
+  const handleOrderClick = (item) => {
+    setSelectedItem(item);
+    setShowModal(true);
+  };
 
   return (
     <div className='container'>
@@ -26,14 +33,42 @@ function MainCourse() {
                 <h5 className="card-title">{item.name}</h5>
                 <p className="card-text">{item.description}</p>
                 <p className="card-text">Price: Ksh {item.price}</p>
-                <button className="btn btn-primary btn-sm rounded-md shadow-lg" >Order Now</button>
+                <button className="btn btn-primary btn-sm rounded-md shadow-lg"
+                onClick={() => handleOrderClick(item)}
+                >Order Now</button>
               </div>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedItem && (
+        <div className={`modal fade ${showModal ? 'show' : ''}`} style={{ display: showModal ? 'block' : 'none' }}>
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">{selectedItem.name}</h5>
+                <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
+              </div>
+              <div className="modal-body">
+                <img src = {selectedItem.image} alt = {selectedItem.name} id = "circle" />
+                <p>{selectedItem.description}</p>
+                <p>Price: Ksh {selectedItem.price}</p>
+                <p>Order message: Your order for {selectedItem.name} has been placed.</p>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>
+                <button type="button" className="btn btn-primary" onClick={() => setShowModal(false)}>Confirm Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {showModal && <div className="modal-backdrop fade show"></div>}
     </div>
   );
 }
+
 
 export default MainCourse;
