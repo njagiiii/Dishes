@@ -161,7 +161,7 @@ As a user should be able to :
 
 The Tasty Dishes website is live and accessible at the following link:
 
-[https://www.tastydishes.com](https://www.tastydishes.com)
+[https://www.tastydishes.com](deluxe-dodol-c29f43.netlify.app/)
 
 Feel free to visit the site and explore our menu, learn more about us, and place your orders online!
 
