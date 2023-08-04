@@ -34,7 +34,7 @@ const OrderSummary = () => {
       style={{
         maxWidth: "800px",
         marginTop: "100px",
-        marginLeft: "900px",
+        marginLeft: "600px",
         border: "none",
       }}
     >

@@ -35,7 +35,7 @@ const ViewDetails = () => {
     <div style={{marginLeft:"50px", marginTop:"80px", textAlign:"center"}}>
       <h1>View Details</h1>
       <p style={{fontSize:"25px",textAligncenter:"center"}}>At Delightful Bistro, we are committed to providing an exceptional dining experience that will leave you with a sense of delight and satisfaction. <br></br> Come and join us for a culinary journey that will tantalize your taste buds and leave you wanting more.</p>
-    <div class="card mb-3" style={{maxWidth:"900px",  border:"none", marginLeft:"800px", marginTop:"100px"}}>
+    <div class="card mb-3" style={{maxWidth:"900px",  border:"none", marginLeft:"500px", marginTop:"100px"}}>
   <div class="row g-0">
     <div class="col-md-4">
       <img src={foodItem.image}  class="img-fluid rounded-start" alt={foodItem.name} style={{borderRadius:"none",marginLeft:"10px",marginTop:"40px" }}/>
