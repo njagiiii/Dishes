@@ -33,7 +33,7 @@ function FeaturedProducts() {
                 <h5 className="card-title">{item.name}</h5>
                 <p className="card-text">{item.description}</p>
                 <p className="card-text">Price: Ksh {item.price}</p>
-                <button className="btn btn-primary btn-sm rounded-md shadow-lg" >Order Now</button>
+                <button type="button" class="btn btn-primary">Order Now</button>
               </div>
             </div>
           </div>

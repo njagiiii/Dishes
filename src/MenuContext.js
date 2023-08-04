@@ -8,16 +8,21 @@ export const MenuData = () => useContext(Menu);
 
 function MenuContext({ children }) {
   const [data, setData] = useState({});
+  
+
 
   function fetchData () {
     fetch ('https://tasty-dishes-cr4o.onrender.com/menu')
     .then((res) => res.json())
-    .then((data) => setData(data))
+    .then((data) =>  setData(data));
+     
   }
 
   useEffect (() => {
     fetchData();
   }, [])
+
+  
 
   return <Menu.Provider value={data}> {children} </Menu.Provider>;
 }

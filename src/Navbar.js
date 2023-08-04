@@ -2,11 +2,10 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 function Navbar(){
    const location = useLocation()
-
+ 
    if(location.pathname === '/'){
     return null;
    }
-
   return(
     <div class="shadow p-1 mb-3 bg-body-tertiary rounded border-bottom border-black" style={{backgroundColor:"black"}}>
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
@@ -33,6 +32,7 @@ function Navbar(){
           <NavLink class="nav-link" id="nav-item" to="/career" style={{textDecoration : "none"}}>Career</NavLink>
         </li>
       </ul>
+          
     </div>
   </div>
 </nav>

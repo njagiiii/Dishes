@@ -4,6 +4,7 @@ import { MenuData } from './MenuContext';
 function Breakfast() {
   const menuData = MenuData();
 
+  
   // Check if data is available
   if (!menuData || !menuData.breakfast || menuData.breakfast.length === 0) {
     return <p>Loading...</p>;

@@ -10,7 +10,7 @@ const ViewDetails = () => {
 
   //  create a function that when i click the order button i should see the payment details
     const handleSummary = () =>{
-      const total = foodItem.price * 2
+      const total = foodItem.price * 5
       setTotalPrice(total);
       navigate('/order-summary', {state:{foodItem, totalPrice:total}});
     }
