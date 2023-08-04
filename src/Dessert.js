@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { MenuData } from './MenuContext';
+import React, { useState } from "react";
+import { MenuData } from "./MenuContext";
 
 function Dessert() {
   const menuData = MenuData();
@@ -22,18 +22,31 @@ function Dessert() {
     setShowToast(true);
   };
 
-      // variable to store the timer ID
-      let toastTimer;
+  // variable to store the timer ID
+  let toastTimer;
 
-      // Clear the previous timer if any and set a new timer for hiding the toast after 5 seconds
-      clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => {
-        setShowToast(false);
-      }, 5000);
+  // Clear the previous timer if any and set a new timer for hiding the toast after 5 seconds
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    setShowToast(false);
+  }, 5000);
 
   return (
-    <div className='container'>
-      <h2 className='text-center mt-4 mb-4'>Desserts Menu</h2>
+    <div className="container">
+      <h2 className="text-center mt-4 mb-4">Desserts Menu</h2>
+      <p style={{ textAlign: "center" }}>Indulge in Sweet Temptations</p>
+      <p style={{ textAlign: "center" }}>
+        As your unforgettable dining experience unfolds, we invite you to
+        explore our enchanting dessert selection. Our talented pastry chefs have
+        crafted a symphony of flavors and textures, presenting a medley of
+        desserts that will surely captivate your taste buds. From decadent
+        chocolate creations to refreshing fruit-inspired delights, each dessert
+        on our menu is a masterpiece of artistry and taste.
+      </p>
+      <p style={{ textAlign: "center" }}>
+        From the Tasty Dishes team, we look forward to serving you the dessert
+        of your dreams. Bon appétit!
+      </p>
       <div className="row">
         {menuData.desserts.map((item) => (
           <div key={item.id} className="col-md-4 mb-4">
@@ -42,15 +55,25 @@ function Dessert() {
                 src={item.image}
                 alt={item.name}
                 className="card-img-top"
-                style={{ height: '200px', objectFit: 'cover' }}
+                style={{ height: "200px", objectFit: "cover" }}
               />
               <div className="card-body">
                 <h5 className="card-title">{item.name}</h5>
                 <p className="card-text">{item.description}</p>
                 <p className="card-text">Price: Ksh {item.price}</p>
-                <button className="btn btn-primary btn-sm rounded-md shadow-lg"
-                onClick={() => handleOrderClick(item)}
-                >Order Now</button>
+                <button
+                  className=""
+                  onClick={() => handleOrderClick(item)}
+                  style={{
+                    backgroundColor: "#547043",
+                    color: "white",
+                    fontSize: "23px",
+                    padding: "10px 25px",
+                    borderRadius: "10px",
+                  }}
+                >
+                  Order Now
+                </button>
               </div>
             </div>
           </div>
@@ -59,22 +82,48 @@ function Dessert() {
 
       {/* Modal */}
       {selectedItem && (
-        <div className={`modal fade ${showModal ? 'show' : ''}`} style={{ display: showModal ? 'block' : 'none' }}>
+        <div
+          className={`modal fade ${showModal ? "show" : ""}`}
+          style={{ display: showModal ? "block" : "none" }}
+        >
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">{selectedItem.name}</h5>
-                <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={() => setShowModal(false)}
+                ></button>
               </div>
               <div className="modal-body">
-                <img src = {selectedItem.image} alt = {selectedItem.name} id = "circle" />
+                <img
+                  src={selectedItem.image}
+                  alt={selectedItem.name}
+                  id="circle"
+                />
                 <p>{selectedItem.description}</p>
                 <p>Price: Ksh {selectedItem.price}</p>
-                <p>Order message: Your order for {selectedItem.name} has been placed.</p>
+                <p>
+                  Order message: Your order for {selectedItem.name} has been
+                  placed.
+                </p>
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleConfirmOrder}>Confirm Order</button>
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={() => setShowModal(false)}
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={handleConfirmOrder}
+                >
+                  Confirm Order
+                </button>
               </div>
             </div>
           </div>
@@ -87,23 +136,23 @@ function Dessert() {
         <div
           className="toast show"
           style={{
-            position: 'fixed',
-            bottom: '20px',
-            right: '20px',
-            minWidth: '200px',
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            minWidth: "200px",
           }}
         >
           <div className="toast-header">
-            <strong className='me-auto'>Order Confirmed</strong>
+            <strong className="me-auto">Order Confirmed</strong>
           </div>
           <div className="toast-body">
-            Thank you for ordering the {selectedItem.name}. Your order is on the way.
+            Thank you for ordering the {selectedItem.name}. Your order is on the
+            way.
           </div>
         </div>
       )}
     </div>
   );
 }
-
 
 export default Dessert;

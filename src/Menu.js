@@ -1,13 +1,13 @@
-
 import React from 'react';
 import { Link } from "react-router-dom";
+
 
 const Menu = () => {     
   return (
     <div className="container menu-parent-div text-center">
     <div className="animate-text menu-header"> 
-      <div className="font-weight-bold header-bold">
-        <h1>Welcome to Tasty Dishes</h1>Welcome to Tasty Dishes delicious universe. Discover the Delectable Delights on Our Exquisite Restaurant Menu! <br>
+      <div className="font-weight-bold header-bold" style={{fontSize:"20px",color:"#4c4c4c"}}>
+        <h1 style={{color:"#152f4e"}}>Welcome to Tasty Dishes</h1>Welcome to Tasty Dishes delicious universe. Discover the Delectable Delights on Our Exquisite Restaurant Menu! <br>
         </br>Everything from our Big on Breakfast, Perfected Drinks, Decadent to your Generous Big Meals Right here at your fingertips.<br>
         </br>ORDER NOW!</div>
     </div>
@@ -55,16 +55,14 @@ const Menu = () => {
             {/* Row 2 Card 1 */}
             <div className="col-lg-6 mb-4">
             <div class="card menu-card bg-light" style={{width: "30rem"}}>
-            <div className="card menu-card bg-light" style={{width: "30rem"}}>
               <Link to="/dessert">
                   <img src="https://restaurentapp.s3.eu-west-1.amazonaws.com/categoryImages/1579274066.jpg" class="card-img-top" alt="..."></img>
                    </Link>
                   <div className="card-body">
                     <h5 className="card-title">Desserts</h5>
                   </div>
-             </div>
-               </div>
-            
+             </div> 
+              </div>
 
             {/* Row 2 Card 2 */}
             <div className="col-lg-6 mb-4">
@@ -82,12 +80,13 @@ const Menu = () => {
               </div>
             </div>
           </div>
+          
+
           {/* Menu Row 3 */}
           <div className="row mt-5">
             {/* Row 3 Card 1 */}
             <div className="col-lg-6 offset-lg-3">
             <div class="card menu-card bg-light" style={{width: "30rem"}}> 
-            <div className="card menu-card bg-light" style={{width: "30rem"}}>
                <Link to="/drinks"> 
                   <img src="https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="..."></img>
                   </Link>
@@ -100,8 +99,7 @@ const Menu = () => {
         </div>
         </div>
         </div>
-        </div>
-      </div>
+      
     
   );
   }

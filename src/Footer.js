@@ -1,66 +1,87 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-light py-5">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <h2>Quick links</h2>
-            <ul className="list-unstyled">
-              <li>
-                <a href="/" className="text-decoration-none">About Us</a>
-              </li>
-              <li>
-                <a href="/" className="text-decoration-none">Product</a>
-              </li>
-              <li>
-                <a href="/" className="text-decoration-none">Blog</a>
-              </li>
-              <li>
-                <a href="/" className="text-decoration-none">Contact Us</a>
-              </li>
-            </ul>
+    <div className="footer-dark">
+      <footer>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 col-md-3 item">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <Link to="/features">Products </Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/menu">Menu</Link>
+                </li>
+                <li>
+                  <Link to="/career">Career</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-sm-6 col-md-3 item">
+              <h3>Locations</h3>
+              <ul>
+                <li>
+                  <Link to="https://goo.gl/maps/9PKbhMkgJcWDAzSt6">
+                    Kilimani
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://goo.gl/maps/srQvDKdLr92Sh6Mt9">
+                    Koinange Street
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://goo.gl/maps/YiDtvuDq7cP3Gh3S6">
+                    Village Market
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://goo.gl/maps/z9uK6vfKWfyioDeM6">
+                    The Waterfront Karen
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://goo.gl/maps/tZ1fZxMB3Mg8eg398">
+                    The Imaara Mall
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-6 item text">
+              <h3>The Tasty Dishes</h3>
+              <p>
+                We're commited to great food, great coffee, great service, an
+                experience that will make your time with us fabulous. All
+                visuals are serving suggestions only. Prices are quoted in
+                Kenyan Shillings and inclusive of VAT.
+              </p>
+            </div>
+            <div className="col item social">
+              <Link to="#">
+                <i className="fab fa-facebook-messenger"></i>{" "}
+              </Link>
+              <Link to="#">
+                <i className="fab fa-twitter"> </i>{" "}
+              </Link>
+              <Link to="#">
+                <i className="fab fa-google"> </i>{" "}
+              </Link>
+              <Link to="#">
+                <i className="fab fa-instagram"> </i>{" "}
+              </Link>{" "}
+            </div>
           </div>
-          <div className="col-md-4">
-            <h2>Contacts</h2>
-            <ul className="list-unstyled">
-              <li>
-                <a href="tel:254725531709" className="text-decoration-none">(254)-725-531-709</a>
-              </li>
-              <li>
-                <a href="tel:254722310349" className="text-decoration-none">(254)-722-310-349</a>
-              </li>
-              <li>
-                <a href="mailto:tastydishes.co.ke" className="text-decoration-none">tastydishes@gmail.co.ke</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-4">
-            <h2>Socials</h2>
-            <ul className="list-inline socials">
-              <li className="list-inline-item">
-                <a href="https://facebook.com"><i className="fab fa-facebook-messenger"></i></a>
-              </li>
-              <li className="list-inline-item">
-                <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
-              </li>
-              <li className="list-inline-item">
-                <a href="https://google.com"><i className="fab fa-google"></i></a>
-              </li>
-              <li className="list-inline-item">
-                <a href="https://youtube.com"><i className="fab fa-youtube"></i></a>
-              </li>
-              <li className="list-inline-item">
-                <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
-              </li>
-            </ul>
-            <h6 className="copy">2023 Tasty Dishes</h6>
-          </div>
+          <p className="copyright">Company Name © 2023</p>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 }
 

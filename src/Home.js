@@ -61,18 +61,18 @@ const Home = () => {
           alignItems: 'center',
           justifyContent: 'center',
           width: '80%',
-          background: 'rgba(255, 255, 255, 0.8)',
+         
           borderRadius: '5px',
           padding: '20px',
-          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+       
         }}
       >
         <h2
 
           style={{
-            fontSize: '2.5rem',
+            fontSize: '5.5rem',
             fontWeight: 'bold',
-            color: '#333',
+            color: 'white',
             marginBottom: '10px',
             textShadow: '2px 2px 2px rgba(0, 0, 0, 0.2)',
           }}
@@ -81,10 +81,10 @@ const Home = () => {
         </h2>
         <p
           style={{
-            fontSize: '1.2rem',
+            fontSize: '2.5rem',
             lineHeight: '1.6',
             textAlign: 'center',
-            color: '#666',
+            color: '#ADD8E6',
             textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
             marginBottom: '30px',
           }}
@@ -94,12 +94,12 @@ const Home = () => {
 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <button
-              className="btn btn-primary"
+              className="btn "
               onClick={handlenavigation}
               style={{
-                fontSize: '1.2rem',
+                fontSize: '2.2rem',
                 fontWeight: 'bold',
-                backgroundColor: 'black', 
+                backgroundColor: '#547043', 
                 color: 'white', 
                 padding: '12px 24px', 
                 borderRadius: '8px', 

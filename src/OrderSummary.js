@@ -26,14 +26,14 @@ const OrderSummary = () => {
     <div class="card mb-3" style={{maxWidth:"800px", marginTop:"100px", marginLeft:"50px", border:"none"}}>
   <div class="row g-0">
     <div class="col-md-4">
-      <img src={foodItem.image} class="img-fluid rounded-start" alt={foodItem.name} style={{maxWidth:"300px", marginLeft:"70px"}}/>
+      <img src={foodItem.image} class="img-fluid rounded-start" alt={foodItem.name} style={{maxWidth:"300px", marginLeft:"0px"}}/>
     </div>
     <div class="col-md-8">
-      <div class="card-body" style={{marginLeft:"120px", marginTop:"50px"}}>
+      <div class="card-body" style={{marginLeft:"30px", marginTop:"50px"}}>
         <h5 class="card-title">Order Summary</h5>
         <p class="card-text"> Total Price:{totalPrice}</p>
-         <button style={{width:"200px", height:"50px", borderRadius:"10px"}} onClick={handleCheckout}>CheckOut</button>
-         <button style={{width:"200px", height:"50px", borderRadius:"10px",marginTop:"20px",display:"block"}} onClick={handleAddorder}>Add Order</button>
+         <button style={{width:"200px", height:"50px", borderRadius:"10px",color:"white"}} onClick={handleCheckout}>CheckOut</button>
+         <button style={{width:"200px", height:"50px", borderRadius:"10px",marginTop:"20px",display:"block" ,color:"white"}} onClick={handleAddorder}>Add Order</button>
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 
+
 //Create our context
 const Menu = createContext();
 
@@ -12,7 +13,7 @@ function MenuContext({ children }) {
 
 
   function fetchData () {
-    fetch ('https://tasty-dishes-cr4o.onrender.com/menu')
+    fetch ('https://dishes-snyh.onrender.com/menu')
     .then((res) => res.json())
     .then((data) =>  setData(data));
      

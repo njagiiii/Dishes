@@ -54,9 +54,9 @@ const Careers = () => {
         </div>
       </div>
       <p>
-        <b>Careers with us?</b>
+        <b style={{fontSize:"25px"}}>Careers with us?</b>
       </p>
-      <p>
+      <p style={{fontSize:"22px"}}>
         We are always looking for eager, hard working people with exciting
         personalities, a passion for superb service and an eye for detail. We
         offer flexible hours, hands on training, competitive wages and staff
@@ -70,15 +70,15 @@ const Careers = () => {
       {/* he application form */}
       <form className="row g-3" onSubmit={handleSubmit}>
         <div class="col-md-6">
-          <label htmlFor="Full Name">Full Name: </label>
+          <label htmlFor="Full Name" style={{fontSize:"20px"}}>Full Name: </label>
           <input class="form-control" type="text" name="fullname" required></input>
         </div>
         <div className="col-md-6">
-          <label htmlFor="Email">Email: </label>
+          <label htmlFor="Email"  style={{fontSize:"20px"}}>Email: </label>
           <input class="form-control" type="email" name="email" required></input>
         </div>
         <div className="col-12">
-          <label htmlFor="Position">Position: </label>
+          <label htmlFor="Position"  style={{fontSize:"20px"}}>Position: </label>
           <select class="form-select">
             <option selected style={{ textAlign: "center" }}>
               Select Position...
@@ -92,11 +92,11 @@ const Careers = () => {
           </select>
         </div>
         <div className="col-12">
-          <label htmlFor="Resume">Resume: </label>
+          <label htmlFor="Resume"  style={{fontSize:"20px"}}>Resume: </label>
           <input class="form-control" type="file"></input>
         </div>
         <div class="col-12 mb-3">
-          <button type="submit" className="btn btn-primary" id="liveToastBtn">
+          <button type="submit" className="btn " id="liveToastBtn"  style={{backgroundColor:"#547043", color:"white", padding:"15px 35px",fontSize:"25px"}}>
             Send
           </button>
         </div>

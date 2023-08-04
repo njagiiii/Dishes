@@ -36,10 +36,10 @@ const ViewDetails = () => {
     <div class="card mb-3" style={{maxWidth:"900px",  border:"none"}}>
   <div class="row g-0">
     <div class="col-md-4">
-      <img src={foodItem.image}  class="img-fluid rounded-start" alt={foodItem.name} style={{borderRadius:"none",marginLeft:"-30px" }}/>
+      <img src={foodItem.image}  class="img-fluid rounded-start" alt={foodItem.name} style={{borderRadius:"none",marginLeft:"10px",marginTop:"40px" }}/>
     </div>
     <div class="col-md-8">
-      <div class="card-body" style={{ marginTop:"50px"}}>
+      <div class="card-body" style={{ marginTop:"50px",marginLeft:"50px"}}>
         <h5 class="card-title">{foodItem.name}</h5>
         <p class="card-text">{foodItem.description}</p>
         <p class="card-text">KSH {foodItem.price}</p>
@@ -65,7 +65,7 @@ const ViewDetails = () => {
       <option value='option3'>SUB HOME FRIES WITH ATEAMED VEGIES</option>
      </select>
      </div>
-     <button style={{width:"300px" , marginTop:"30px", borderRadius:"10px", height:"50px",marginLeft:"40px"}} onClick={handleSummary}>Order</button>
+     <button style={{width:"300px" , marginTop:"30px", borderRadius:"10px", height:"50px",marginLeft:"40px",color:"white"}} onClick={handleSummary}>Order</button>
      {totalPrice > 0 && (
       <p>Total Price KSH {totalPrice}</p>
      )}
