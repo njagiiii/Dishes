@@ -22,7 +22,7 @@ function FeaturedProducts() {
       <p style={{ textAlign: "center" }}>
         Introducing Our Chef's Specials - A Culinary Journey Like No Other!
       </p>
-      <p style={{ textAlign: "center" }}>
+      <p style={{ textAlign: "center"}}>
         At [Restaurant Name], we take immense pride in presenting our Chef's
         Specials – a delightful selection of dishes crafted with passion and
         creativity by our talented culinary team. Each dish represents a
