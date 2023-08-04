@@ -26,6 +26,7 @@ function App() {
      <Navbar />
       <MenuContext>
         <Routes>
+
           <Route path="/" element={<Home />} />
           <Route  path="/menu" element={<Menu />} />
           <Route path="/breakfast" element={<Breakfast />} />

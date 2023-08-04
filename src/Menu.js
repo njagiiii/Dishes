@@ -11,7 +11,6 @@ const Menu = () => {
         </br>Everything from our Big on Breakfast, Perfected Drinks, Decadent to your Generous Big Meals Right here at your fingertips.<br>
         </br>ORDER NOW!</div>
     </div>
-    <div>
           {/* Menu Row 1 */}
           <div className="row mt-5 ">
           {/* Row 1 Card 1 */}
@@ -23,7 +22,6 @@ const Menu = () => {
                   className="card-img-top"
                   alt="..."
                 />
-  
               </Link>
               <div className="card-body">
                 
@@ -42,8 +40,8 @@ const Menu = () => {
             <Link to="/appetizer">
                   <img src="https://images.pexels.com/photos/88917/pexels-photo-88917.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="..."></img>
                   </Link>
-                  <div class="card-body">
-                    <h5 class="card-title">Appetizers</h5>
+                  <div className="card-body">
+                    <h5 className="card-title">Appetizers</h5>
                     
                   </div>
                </div>
@@ -57,11 +55,12 @@ const Menu = () => {
             {/* Row 2 Card 1 */}
             <div className="col-lg-6 mb-4">
             <div class="card menu-card bg-light" style={{width: "30rem"}}>
+            <div className="card menu-card bg-light" style={{width: "30rem"}}>
               <Link to="/dessert">
                   <img src="https://restaurentapp.s3.eu-west-1.amazonaws.com/categoryImages/1579274066.jpg" class="card-img-top" alt="..."></img>
                    </Link>
-                  <div class="card-body">
-                    <h5 class="card-title">Desserts</h5>
+                  <div className="card-body">
+                    <h5 className="card-title">Desserts</h5>
                   </div>
              </div>
                </div>
@@ -87,12 +86,13 @@ const Menu = () => {
           <div className="row mt-5">
             {/* Row 3 Card 1 */}
             <div className="col-lg-6 offset-lg-3">
-            <div class="card menu-card bg-light" style={{width: "30rem"}}>
-               <Link to="/drinks">  
+            <div class="card menu-card bg-light" style={{width: "30rem"}}> 
+            <div className="card menu-card bg-light" style={{width: "30rem"}}>
+               <Link to="/drinks"> 
                   <img src="https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="..."></img>
                   </Link>
-                  <div class="card-body">
-                    <h5 class="card-title">Drinks</h5>
+                  <div className="card-body">
+                    <h5 className="card-title">Drinks</h5>
                     
                   </div>
                </div>
@@ -101,6 +101,7 @@ const Menu = () => {
         </div>
         </div>
         </div>
+      </div>
     
   );
   }
